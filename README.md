@@ -16,6 +16,30 @@ tree / ----> #Display the entire filesystem structure in a tree format
 tail -f /var/log/syslog	----> #Continuously view new system log messages in real-time
 ```
 ---
+
+### Directories & Files
+
+```
+mkdir -p ~/linux_practice/permissions----> #Create permissions directory and (parent dirs if needed)
+
+cd ~/linux_practice----> #Change current directory to linux_practice
+
+mkdir projects config logs---->#Create three directories: projects, config, and logs
+
+touch projects/app.py ---->#
+
+echo "Hello World" > projects/readme.txt ----> #Create an empty file named app.py in projects
+
+mv projects/readme.txt docs_readme.txt ----> #Create a file with text "Hello World" in projects/readme.txt
+
+mv docs_readme.txt config/ ----> #Move docs_readme.txt into the config directory
+
+rm config/docs_readme.txt	----> #Remove (delete) the file docs_readme.txt from config
+
+rmdir logs ----> #Remove the empty directory logs
+```
+---
+
 ### Ownership & Permissions Management
 
 ####  Ownership & Permissions
